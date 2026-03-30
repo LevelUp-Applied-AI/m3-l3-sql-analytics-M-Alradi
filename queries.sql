@@ -42,7 +42,8 @@ WITH RankedSalaries AS (
 )
 SELECT name, first_name, last_name, salary
 FROM RankedSalaries
-WHERE rn = 1;
+WHERE rn = 1
+ORDER BY salary DESC;
 
 -- Q4: Project Staffing Overview
 -- All projects with employee count and total hours. Include projects with 0 assignments.
